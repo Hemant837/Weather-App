@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="weatherCard">
+      <div class="weatherCard1">
+        <div class="search">
+          <input
+            class="searchInput"
+            type="text"
+            placeholder="Search for places..."
+            spellcheck="false"
+          />
+          <button class="searchButton"><img src="images/search.png" /></button>
+        </div>
+        <div class="weather">
+          <img class="weatherImage" src="images/mist.png" />
+        </div>
+        <div class="temperature">Degree</div>
+        <div class="dayAndTime">
+          <h3 class="day">Monday,</h3>
+          <h3 class="time">16:00</h3>
+        </div>
+        <div class="futurePre">
+          <div class="humidity">
+            <img src="images/humidity.png" />
+            <p class="humidityDes">Humidity</p>
+          </div>
+          <div class="wind">
+            <img src="images/wind.png" />
+            <p class="windDes">Wind Speed</p>
+          </div>
+        </div>
+        <div class="cityName">City, State</div>
+      </div>
+      <div class="weatherCard2"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
