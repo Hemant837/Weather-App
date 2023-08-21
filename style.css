@@ -20,7 +20,7 @@ body {
 .weatherCard2 {
     background-color: #fbf6ef;
     border-radius: 0px 25px 25px 0px;
-    width: 700px;
+    width: 600px;
     height: 600px;
 }
 
@@ -114,4 +114,75 @@ body {
     height: 50px;
     text-align: center;
     padding-top: 25px;
+}
+
+.cards-group1 {
+    display: flex;
+    margin: 10px;
+}
+
+.cards-group2 {
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.card1 {
+    margin-left: 10px;
+    width: 100px;
+    height: 120px;
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: #aed9e0;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.card-image {
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.card2 {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 180px;
+    height: 150px;
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: #aed9e0;
+}
+
+.highlight-title, .weatherCard2-title {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.sunrise, .sunset {
+    display: flex;
+    margin-left: 10px;
+}
+
+.sunrise-image, .sunset-image {
+    width: 35px;
+    height: 35px;
+}
+
+
+.max-temp, .min-temp, .wind-status, .deg, .coord, .ground, .sea{
+    margin-left: 20px;
+}
+
+.sunrise-text, .sunset-text {
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+
+.visibility {
+    font-size: 30px;
+    margin-left: 20px;
 }
