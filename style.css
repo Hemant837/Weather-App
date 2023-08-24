@@ -1,30 +1,34 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;    
-    background-color: #dce0d9;
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
 }
 
-.weatherCard{
+.weather-app {
     display: flex;
-    margin-left: 40vh;
-    margin-top: 5vh;
+    margin: 5vh 0 0 40vh;
 }
 
-.weatherCard1 {
-    background-color:#ead7c3;
+.weather-card {
+    background-color: #1b262c;
     border-radius: 25px 0px 0px 25px;
     width: 300px;
     height: 600px;
+    font-family: "Roboto", sans-serif;
+    color: #f4f4f4;
 }
-.weatherCard2 {
-    background-color: #fbf6ef;
+
+.weather-forecast {
+    background-color: #394b59;
     border-radius: 0px 25px 25px 0px;
     width: 600px;
     height: 600px;
+    font-family: "Roboto", sans-serif;
+    color: #f4f4f4;
 }
 
-.search {
+.search-bar {
     margin-top: 30px;
     display: flex;
     align-items: center;
@@ -32,16 +36,18 @@ body {
     width: 100%;
 }
 
-.searchInput {
+.search-input {
     border: none;
     outline: none;
     height: 30px;
-    background: #aed9e0;
+    background: #1b262c;
     border-radius: 25px;
+    padding: 5px 10px;
+    color: #f4f4f4;
 }
 
-.searchButton {
-    background: #aed9e0;
+.search-button {
+    background: #1b262c;
     border: none;
     border-radius: 50%;
     width: 30px;
@@ -49,95 +55,95 @@ body {
     cursor: pointer;
 }
 
-.searchButton img {
+.search-button img {
     width: 16px;
+    height: 18px;
 }
 
-/* .weather {
-    border: 1px solid;
-} */
-
-.weather img {
+.weather-icon {
     margin-left: 60px;
     width: 180px;
     height: 180px;
+    color: #66b3ff;
 }
 
 .temperature {
     width: max-content;
     font-size: 60px;
     margin-left: 60px;
+    color: #f4f4f4;
 }
 
 .celcius {
     font-size: 40px;
 }
 
-.dayAndTime {
+.day-and-time {
     margin-left: 60px;
     display: flex;
+    color: #f4f4f4;
 }
 
-.time {
-    font-weight: normal;
+.current-time {
     font-weight: bold;
 }
 
-.futurePre {
+.additional-info {
     flex-direction: column;
 }
 
-.futurePre, .humidity, .wind {
-    display: flex;
-}
-
-.humidity, .wind {
+.humidity-info, .pressure-info {
     align-items: center;
     margin-top: 10px;
     margin-left: 60px;
     font-size: 14px;
     font-weight: bold;
+    color: #f4f4f4;
 }
 
-.humidity img, .wind img{
+.display-flex {
+    display: flex;
+}
+
+.humidity-info img, .pressure-info img {
     margin-right: 10px;
     width: 50px;
     height: 50px;
 }
 
-.cityName {
-    margin-top: 10px;
-    margin-left: 30px;
+.location {
+    margin: 10px 0 0 30px;
     border-radius: 10px;
     font-weight: bold;
     width: 240px;
     height: 50px;
     text-align: center;
     padding-top: 25px;
+    background-color: #394b59;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    color: #f4f4f4;
 }
 
-.cards-group1 {
-    display: flex;
-    margin: 10px;
-}
-
-.cards-group2 {
+.forecast-cards, .highlight-cards {
     display: flex;
     margin: 10px;
     flex-wrap: wrap;
 }
 
-.card1 {
+.forecast-card {
     margin-left: 10px;
     width: 100px;
     height: 120px;
     border-radius: 15px;
     font-weight: bold;
-    background-color: #aed9e0;
+    background-color: #283845;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    color: #f4f4f4;
 }
 
 .card-text {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .card-image {
@@ -146,19 +152,20 @@ body {
     height: 60px;
 }
 
-.card2 {
-    margin-left: 10px;
-    margin-bottom: 10px;
+.highlight-card {
+    margin: 0 0 10px 10px;
     width: 180px;
     height: 150px;
     border-radius: 15px;
     font-weight: bold;
-    background-color: #aed9e0;
+    background-color: #283845;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    color: #f4f4f4;
 }
 
-.highlight-title, .weatherCard2-title {
-    margin-left: 20px;
-    margin-top: 30px;
+.forecast-title, .highlights-title {
+    margin: 30px 0 0 20px;
+    color: #f4f4f4;
 }
 
 .sunrise, .sunset {
@@ -171,18 +178,17 @@ body {
     height: 35px;
 }
 
-
-.max-temp, .min-temp, .wind-status, .deg, .coord, .ground, .sea{
+.left-margin {
     margin-left: 20px;
 }
 
 .sunrise-text, .sunset-text {
-    margin-left: 10px;
-    margin-top: 12px;
+    margin: 12px 0 0 10px;
 }
-
 
 .visibility {
     font-size: 30px;
     margin-left: 20px;
+    color: #f4f4f4;
 }
+
